@@ -177,7 +177,7 @@ def main():
     st.header("Enter Your Homework Question")
     question = st.text_area("Type your question here:", height=150)
 
-    if st.button("Get Help"):
+    if st.button("Get Answer"):
         if question.strip():
             # Clear sidebar and display NLP analysis once
             st.sidebar.empty()
