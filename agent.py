@@ -82,6 +82,5 @@ def concise_answer_agent(solution):
     """
     messages = [
         {"role": "system", "content": "You are an expert summarizer. Your job is to distill a detailed solution into a concise, easy-to-understand final answer. Extract the key result or main point and present it clearly. Keep it brief but informative."},
-        {"role": "user", "content": f"Summarize the final answer from this detailed solution:\n\n---\n{solution}\n---"}
-    ]
+        {"role": "user", "content": f"Summarize the final answer from this detailed solution:\n\n---\n{solution}\n---"}]
     return _create_chat_completion(messages)
