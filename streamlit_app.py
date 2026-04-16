@@ -170,7 +170,7 @@ def main():
     st.title("Homework Helper 📚")
     st.write("""
         Welcome to the Homework Helper! Ask any homework question and get help from multiple AI agents.
-        Enter your question in the text box below and press "Get Help" to see the answers.
+        Enter your question in the text box below and press "Get Answer" to see the answers.
     """)
 
     # Input section
