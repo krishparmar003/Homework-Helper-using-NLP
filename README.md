@@ -37,7 +37,7 @@ A multi-agent AI app that helps you solve homework questions. Ask anything — i
    * **QA Agent** — reviews for mistakes and improvements
    * **Concise Answer Agent** — gives the final short answer
 
-4. **Output** is displayed in the UI with explanation + final answer
+4. **Output** is displayed in the UI with the structured response and optional explanation steps.
 
 ---
 
