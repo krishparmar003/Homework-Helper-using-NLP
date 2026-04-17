@@ -11,28 +11,42 @@ A multi-agent AI app that helps you solve homework questions. Ask anything — i
 <!-- Save a screenshot of your app as 'demo.png' in the repo root folder -->
 <img width="1381" height="674" alt="Screenshot 2026-04-17 005107" src="https://github.com/user-attachments/assets/52fdf372-114e-49df-ad60-f1acba49370d" />
 
+---
+
+## 🛠️ Tech Stack
+
+| Layer          |            Technology |
+| -------------- | --------------------: |
+| Frontend       |             Streamlit |
+| Backend Agents | Python (custom logic) |
+| NLP Engine     |  spaCy / Transformers |
+| Deployment     |       Streamlit Cloud |
 
 ---
 
-## How it works
+## ⚙️ How It Works
 
-4 agents run one after another:
+1. **User Input** via Streamlit UI
 
-1. **Clarification** — makes sure the question is clear enough to answer
-2. **Solution** — breaks it down step by step
-3. **QA** — checks the solution for any mistakes
-4. **Concise Answer** — gives you the short version
+2. **Query Analysis** (NLP/custom rules) detects intent, difficulty, and key topics
 
-The sidebar also does a quick analysis of your question — detects the type, complexity, and key topics using basic NLP.
+3. Query is passed through a **multi-agent pipeline**:
+
+   * **Clarification Agent** — checks if the question is clear
+   * **Solution Agent** — solves it step-by-step
+   * **QA Agent** — reviews for mistakes and improvements
+   * **Concise Answer Agent** — gives the final short answer
+
+4. **Output** is displayed in the UI with explanation + final answer
 
 ---
 
-## Built with
+## 💡 Tips & Extensions
 
-- **Groq** — LLaMA 3.3 70B Versatile
-- **Streamlit** — UI
-- **streamlit-shadcn-ui** — copy button
-- **python-dotenv** — local API key management
+* Add a **solution-checker agent** to verify student answers.
+* Integrate a **knowledge base** (local files or vector DB) for subject-specific resources.
+* Add **assistant personas** (concise tutor, detailed explainer, hint-giver).
+* Add unit tests for agents to ensure stable behavior.
 
 ---
 
